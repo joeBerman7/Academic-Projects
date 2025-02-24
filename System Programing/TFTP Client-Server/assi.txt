@@ -1,0 +1,23 @@
+TFTP Protocol
+The extended TFTP supports various commands for receiving and uploading files.
+Upon connecting, a client must specify their username using a Login command. The nickname must be unique and
+cannot be changed after it is set. Once the command is sent, the server will reply on the validity of the username.
+Once a user is logged in successfully, he can submit commands which deal with file transferring
+General Description
+In this assignment, you will implement an extended TFTP (Trivial File Transfer Protocol) server and client. the
+TFTP server is a file transfer protocol allowing multiple users to upload and download files from the server and
+announce when files are added or deleted to the server. The communication between the server and the client(s) will
+be performed using a binary communication protocol, which will support the upload, download, and lookup of files.
+Please read the entire document before starting.
+The implementation of the server will be based on the Thread-Per-Client (TPC) servers taught in class, any time
+the server receives a message from a client it can replay back to the client itself. But what if we want to send messages
+between clients, or broadcast an announcement to all the clients? The first part of the assignment will be to replace
+some of the current interfaces with new interfaces that will allow such a case (as described in Section 4.3). Note
+that this part changes the server pattern and must not know the specific protocol it is running. The current server
+pattern also works that way (Generics and interfaces).
+To get you started, we supply a few examples for different protocols and clients, the most complete ones being
+newsfeed and echo, we recommend you go over them. Specifically.
+The original TFTP protocol is based on UDP. Since our servers are TCP based, we altered the original protocol.
+NOTE: The examples protocol doesn’t use a bi-directional message-passing interface. When you start
+modifying the server to use bi-directional message-passing they will not compile anymore and you can
+delete them.
