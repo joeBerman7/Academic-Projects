@@ -1,0 +1,5 @@
+1 Enter file name: offensive
+4
+5 Enter file offset and length - > 41d 23
+8 Enter memory address and new value - > 0 c3
+7 Enter source target and length -> 0 41d 1

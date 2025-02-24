@@ -1,0 +1,7 @@
+old ntsc
+symbol 53: 0804847d    93 FUNC    GLOBAL DEFAULT   13 count_digits
+section   [13] .text             PROGBITS        08048380 000380 000282 00  AX  0   0 16
+
+new file
+symbol     60: 000011ad    84 FUNC    GLOBAL DEFAULT   16 count_digits
+section   [16] .text             PROGBITS        00001070 001070 000219 00  AX  0   0 16

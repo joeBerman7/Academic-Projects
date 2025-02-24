@@ -1,0 +1,4 @@
+old
+    53: 0804847d    93 FUNC    GLOBAL DEFAULT   13 count_digits
+new
+    60: 000011ad    84 FUNC    GLOBAL DEFAULT   16 count_digits

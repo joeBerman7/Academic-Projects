@@ -1,0 +1,6 @@
+symbol    62: 0804841d    23 FUNC    GLOBAL DEFAULT   13 main
+section    [13] .text             PROGBITS        08048320 000320 000192 00  AX  0   0 16
+
+Symbol_virtual_address - Section_virtual_address = Symbol_offset - section_offset
+0804841d - 08048320 = Symbol_offset - 000320
+Symbol_offset = 41d
